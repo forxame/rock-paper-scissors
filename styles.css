@@ -19,23 +19,29 @@ html {
 
 header {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    font-family: 'Edu VIC WA NT Beginner', cursive;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: rgb(36, 34, 34);
 }
+
+.font {
+    font-family: 'Edu VIC WA NT Beginner', cursive; 
+    
+}
+
 body {
-    background-color: black;
+    background-color: wheat;
     color: wheat;
 }
 
 main {
-    min-height: 58.3vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8.5em;
+    color: rgb(36, 34, 34);
 }
 
 .wrapper {
@@ -46,42 +52,51 @@ main {
     
 }
 
-#result {
+.result {
     font-size: 36px;
 }
 
-#score {
-    font-size: 25px;
+.score {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
-#rock,
-#paper,
-#scissors {
-    padding: 3em;
+.rock,
+.paper,
+.scissors {
+    padding: 2em;
     border: 1px solid wheat;
     border-radius: 10px;
     background: black;
     color: wheat;
-    font-size: 25px;
 }
 
-#rock:hover,
-#paper:hover,
-#scissors:hover {
+.scissors {
+    padding: 2em 2.3em;
+}
+
+.emoji {
+    font-size: 36px;
+}
+
+.rock:hover,
+.paper:hover,
+.scissors:hover {
     background: gray;
     cursor: pointer;
 }
 
 footer {
     background: rgb(36, 34, 34);
-    min-height: 10vh;
-    border-top: 1px solid wheat;
-    text-align: center;
-    padding-top: 3.5vh;
+    min-height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 

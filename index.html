@@ -10,26 +10,39 @@
 <body>
 
     <header>
-        <h1>Rock, Paper, Scissors !</h1>
+        <h1 class="font">Rock, Paper, Scissors !</h1>
     </header>
 
     <main>
-        <div class="wrapper">
-            <div id="result">May you give a try</div>
+        <div class="wrapper font">
+            <div class="result" id="result">May you give a try</div>
     
-            <div id="score">
-                You -->  <span id="playerScore"></span> : <span id="computerScore"></span>  <-- Cpu
+            <div class="score" id="score">
+                    <div class="box">
+                        <div class="player choice" id="playerChoice"></div>
+                        <div id="playerScore"></div>
+                    </div>
+                    <div class="box">
+                        <div class="computer choice" id="computerChoice"></div>
+                        <div id="computerScore"></div>
+                    </div>
             </div>
             
             <div class="buttons">
-                <button id="rock">✊</button>
-                <button id="paper">✋</button>
-                <button id="scissors">✌️</button>
+                <button class="rock" id="rock">
+                    <span class="emoji">✊</span>
+                </button>
+                <button class="paper" id="paper">
+                    <span class="emoji">✋</span>
+                </button>
+                <button class="scissors" id="scissors">
+                    <span class="emoji">✌️</span>
+                </button>
             </div>
         </div>
     </main>
     <footer>
-        <p>Copyright - forxame</p>
+        <p>Copyright © forxame</p>
     </footer>
     <script src="./app.js"></script>
 </body>
