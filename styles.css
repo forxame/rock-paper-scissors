@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Roboto&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+header {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+body {
+    background-color: black;
+    color: wheat;
+}
+
+main {
+    min-height: 58.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8.5em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    
+}
+
+#result {
+    font-size: 36px;
+}
+
+#score {
+    font-size: 25px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#rock,
+#paper,
+#scissors {
+    padding: 3em;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    background: black;
+    color: wheat;
+    font-size: 25px;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+footer {
+    background: rgb(36, 34, 34);
+    min-height: 10vh;
+    border-top: 1px solid wheat;
+    text-align: center;
+    padding-top: 3.5vh;
+}
+
