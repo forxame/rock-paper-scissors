@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -15,34 +16,49 @@
 
     <main>
         <div class="wrapper font">
-            <div class="result" id="result">May you give a try</div>
+            <div class="result font-36px" id="result">Give it a try👽</div>
     
             <div class="score" id="score">
-                    <div class="box">
-                        <div class="player choice" id="playerChoice"></div>
-                        <div id="playerScore"></div>
+                    <div class="score-box one">
+                        <span class="playerChoice font-36px" id="playerChoice">😎</span>
+                        <span class="computerChoice font-36px" id="computerChoice">👍</span>
                     </div>
-                    <div class="box">
-                        <div class="computer choice" id="computerChoice"></div>
-                        <div id="computerScore"></div>
+                    <div class="score-box two">
+
+                        <span class="score-box-two-child">
+                            <span class="">You:</span>
+                            <span class="playerScore" id="playerScore"></span>  
+                        </span>
+                                              
+                        <span class="score-box-two-child">
+                            <span class="">Cpu:</span>
+                            <span class="computerScore" id="computerScore"></span>
+                        </span>
+
                     </div>
             </div>
             
             <div class="buttons">
                 <button class="rock" id="rock">
-                    <span class="emoji">✊</span>
+                    <span class="font-36px">✊</span>
                 </button>
                 <button class="paper" id="paper">
-                    <span class="emoji">✋</span>
+                    <span class="font-36px">✋</span>
                 </button>
                 <button class="scissors" id="scissors">
-                    <span class="emoji">✌️</span>
+                    <span class="font-36px">✌️</span>
                 </button>
             </div>
         </div>
+
+        <!-- Popup window for reset -->
+
     </main>
     <footer>
         <p>Copyright © forxame</p>
+        <a href="https://github.com/forxame" target="_blank">
+            <i class='fa fa-github'></i>
+        </a>
     </footer>
     <script src="./app.js"></script>
 </body>

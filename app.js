@@ -42,11 +42,10 @@ function displayScore() {
 
 function gameOver() {
     if (playerScore == 5) {
-        return "Congrats! You won.";
+        winnerText.textContent =  "Congrats! You won.";
     } else if (computerScore == 5) {
-        return "Nice try! Get over here...";
+        winnerText.textContent = "Better luck next time!";
     }
-    
 }
     
 const btn1 = document.getElementById("rock");
@@ -63,23 +62,23 @@ playerScoreText.textContent = playerScore;
 computerScoreText.textContent = computerScore;
 let playerSelection;
 
-    
 btn1.addEventListener("click", ()=>{
     playerSelection = "✊";
     winnerText.textContent = game();
     displayScore();
+    gameOver();
 })
 
 btn2.addEventListener("click", ()=>{
     playerSelection = "✋";
     winnerText.textContent = game();
     displayScore();
+    gameOver();
 })
 
 btn3.addEventListener("click", ()=>{
     playerSelection = "✌️";
     winnerText.textContent = game();
     displayScore();
+    gameOver();
 })
-
-gameOver();

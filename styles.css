@@ -52,14 +52,57 @@ main {
     
 }
 
-.result {
+.font-36px {
     font-size: 36px;
 }
 
-.score {
-    font-size: 30px;
+.result {
+    min-width: 7em;
+    background: rgb(36, 34, 34);
+    color: wheat;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.playerChoice {
+    margin-left: 1.6em;
+}
+
+.computerChoice {
+    margin-left: 2.7em;
+}
+
+.playerChoice,
+.computerChoice {
+    min-width: 1.5em;
+    min-height: 1.5em;
+    background: rgb(36, 34, 34);
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.score-box.one {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+}
+
+.score-box.one {
+    min-height: 6em;
+}
+
+.score-box-two-child {
+    margin: 0 2.5em;
+    font-size: 22px;
+}
+
+.playerScore,
+.computerScore {
+    position:absolute;
+}
+
+.computerScore {
+    margin-left: 5px;
 }
 
 .buttons {
@@ -73,16 +116,12 @@ main {
     padding: 2em;
     border: 1px solid wheat;
     border-radius: 10px;
-    background: black;
+    background: rgb(36, 34, 34);
     color: wheat;
 }
 
 .scissors {
     padding: 2em 2.3em;
-}
-
-.emoji {
-    font-size: 36px;
 }
 
 .rock:hover,
@@ -100,3 +139,18 @@ footer {
     align-items: center;
 }
 
+.fa.fa-github {
+    font-size: 30px;
+    margin-left: 10px;
+    color: #f5deb3;
+}
+
+.fa.fa-github:hover {
+    color: burlywood;
+    font-size: 36px;
+}
+
+.fa.fa-github:active {
+    color: rgb(172, 137, 73);
+    font-size: 36px;
+}
